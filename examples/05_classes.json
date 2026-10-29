@@ -1,0 +1,1328 @@
+{
+  "type": "subroutine-declaration",
+  "subroutine-name": "main",
+  "result-type": {
+    "type": "builtin-type",
+    "type-value": "void"
+  },
+  "arguments-declarators": [],
+  "constant-section": [],
+  "type-section": [
+    {
+      "type": "struct-type",
+      "name": "Shape",
+      "base-structs": [],
+      "fields": [],
+      "methods": [
+        {
+          "type": "subroutine-declaration",
+          "subroutine-name": "area",
+          "result-type": {
+            "type": "builtin-type",
+            "type-value": "real"
+          },
+          "arguments-declarators": [],
+          "constant-section": [],
+          "type-section": [],
+          "variables-section": [],
+          "subroutines-section": [],
+          "subroutine-body": null,
+          "visibility": "public",
+          "abstract": true
+        }
+      ],
+      "friends": [],
+      "kind": "interface"
+    },
+    {
+      "type": "struct-type",
+      "name": "Base",
+      "base-structs": [
+        {
+          "type": "named-type",
+          "name": "Shape"
+        }
+      ],
+      "fields": [
+        {
+          "type": "variables-declaration",
+          "global": false,
+          "static": true,
+          "const": true,
+          "declarators": [
+            {
+              "type": "declarator",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "string"
+              },
+              "variable-name": "UNITS",
+              "reference": false,
+              "constructor-name": null,
+              "constructor-arguments": [
+                {
+                  "type": "literal-constant",
+                  "constant-type": "string",
+                  "constant-value": "cm"
+                }
+              ]
+            }
+          ],
+          "visibility": "public"
+        },
+        {
+          "type": "variables-declaration",
+          "global": false,
+          "static": true,
+          "const": false,
+          "declarators": [
+            {
+              "type": "declarator",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "integer"
+              },
+              "variable-name": "$count",
+              "reference": false,
+              "constructor-name": null,
+              "constructor-arguments": [
+                {
+                  "type": "literal-constant",
+                  "constant-type": "integer",
+                  "constant-value": 0
+                }
+              ]
+            }
+          ],
+          "visibility": "protected"
+        },
+        {
+          "type": "variables-declaration",
+          "global": false,
+          "static": false,
+          "const": false,
+          "declarators": [
+            {
+              "type": "declarator",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "string"
+              },
+              "variable-name": "$label",
+              "reference": false,
+              "constructor-name": null,
+              "constructor-arguments": [
+                {
+                  "type": "literal-constant",
+                  "constant-type": "string",
+                  "constant-value": "shape"
+                }
+              ]
+            }
+          ],
+          "visibility": "public"
+        }
+      ],
+      "methods": [
+        {
+          "type": "subroutine-declaration",
+          "subroutine-name": "__construct",
+          "result-type": {
+            "type": "builtin-type",
+            "type-value": "void"
+          },
+          "arguments-declarators": [],
+          "constant-section": [],
+          "type-section": [],
+          "variables-section": [],
+          "subroutines-section": [],
+          "subroutine-body": {
+            "type": "compound-statement",
+            "statements": [
+              {
+                "type": "expression-statement",
+                "expression": {
+                  "type": "postfix-increment",
+                  "result-type": {
+                    "type": "builtin-type",
+                    "type-value": "integer"
+                  },
+                  "argument": {
+                    "type": "member-access",
+                    "result-type": {
+                      "type": "builtin-type",
+                      "type-value": "integer"
+                    },
+                    "class-name": "self",
+                    "member-name": "$count",
+                    "static": true
+                  }
+                }
+              }
+            ]
+          },
+          "visibility": "public"
+        },
+        {
+          "type": "subroutine-declaration",
+          "subroutine-name": "getCount",
+          "result-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "arguments-declarators": [],
+          "constant-section": [],
+          "type-section": [],
+          "variables-section": [],
+          "subroutines-section": [],
+          "subroutine-body": {
+            "type": "compound-statement",
+            "statements": [
+              {
+                "type": "return-statement",
+                "expression": {
+                  "type": "member-access",
+                  "result-type": {
+                    "type": "builtin-type",
+                    "type-value": "integer"
+                  },
+                  "class-name": "self",
+                  "member-name": "$count",
+                  "static": true
+                },
+                "the-last-statement": true
+              }
+            ]
+          },
+          "visibility": "public",
+          "static": true
+        },
+        {
+          "type": "subroutine-declaration",
+          "subroutine-name": "area",
+          "result-type": {
+            "type": "builtin-type",
+            "type-value": "real"
+          },
+          "arguments-declarators": [],
+          "constant-section": [],
+          "type-section": [],
+          "variables-section": [],
+          "subroutines-section": [],
+          "subroutine-body": null,
+          "visibility": "public",
+          "abstract": true
+        }
+      ],
+      "friends": [],
+      "kind": "class",
+      "abstract": true
+    },
+    {
+      "type": "struct-type",
+      "name": "Circle",
+      "base-structs": [
+        {
+          "type": "named-type",
+          "name": "Base"
+        }
+      ],
+      "fields": [
+        {
+          "type": "variables-declaration",
+          "global": false,
+          "static": false,
+          "const": false,
+          "declarators": [
+            {
+              "type": "declarator",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "real"
+              },
+              "variable-name": "$r",
+              "reference": false,
+              "constructor-name": null,
+              "constructor-arguments": []
+            }
+          ],
+          "visibility": "private"
+        }
+      ],
+      "methods": [
+        {
+          "type": "subroutine-declaration",
+          "subroutine-name": "__construct",
+          "result-type": {
+            "type": "builtin-type",
+            "type-value": "void"
+          },
+          "arguments-declarators": [
+            {
+              "type": "variables-declaration",
+              "global": false,
+              "static": false,
+              "const": false,
+              "declarators": [
+                {
+                  "type": "declarator",
+                  "variable-type": {
+                    "type": "builtin-type",
+                    "type-value": "real"
+                  },
+                  "variable-name": "$r",
+                  "reference": false,
+                  "constructor-name": null,
+                  "constructor-arguments": []
+                }
+              ]
+            }
+          ],
+          "constant-section": [],
+          "type-section": [],
+          "variables-section": [],
+          "subroutines-section": [],
+          "subroutine-body": {
+            "type": "compound-statement",
+            "statements": [
+              {
+                "type": "expression-statement",
+                "expression": {
+                  "type": "function-call",
+                  "function-name": "__construct",
+                  "result-type": {
+                    "type": "builtin-type",
+                    "type-value": "void"
+                  },
+                  "arguments": [],
+                  "class-name": "parent"
+                }
+              }
+            ]
+          },
+          "visibility": "public"
+        },
+        {
+          "type": "subroutine-declaration",
+          "subroutine-name": "area",
+          "result-type": {
+            "type": "builtin-type",
+            "type-value": "real"
+          },
+          "arguments-declarators": [],
+          "constant-section": [],
+          "type-section": [],
+          "variables-section": [],
+          "subroutines-section": [],
+          "subroutine-body": {
+            "type": "compound-statement",
+            "statements": [
+              {
+                "type": "return-statement",
+                "expression": {
+                  "type": "product",
+                  "result-type": {
+                    "type": "builtin-type",
+                    "type-value": "real"
+                  },
+                  "left": {
+                    "type": "variable-reference",
+                    "variable-name": "M_PI",
+                    "variable-type": {
+                      "type": "builtin-type",
+                      "type-value": "real"
+                    },
+                    "variable-usage": "rvalue"
+                  },
+                  "right": {
+                    "type": "power",
+                    "result-type": {
+                      "type": "builtin-type",
+                      "type-value": "real"
+                    },
+                    "left": {
+                      "type": "member-access",
+                      "result-type": {
+                        "type": "builtin-type",
+                        "type-value": "real"
+                      },
+                      "object": {
+                        "type": "variable-reference",
+                        "variable-name": "$this",
+                        "variable-type": {
+                          "type": "named-type",
+                          "name": "Circle"
+                        },
+                        "variable-usage": "rvalue"
+                      },
+                      "member-name": "r"
+                    },
+                    "right": {
+                      "type": "literal-constant",
+                      "constant-type": "integer",
+                      "constant-value": 2
+                    }
+                  }
+                },
+                "the-last-statement": true
+              }
+            ]
+          },
+          "visibility": "public"
+        }
+      ],
+      "friends": [],
+      "kind": "class"
+    },
+    {
+      "type": "struct-type",
+      "name": "Rect",
+      "base-structs": [
+        {
+          "type": "named-type",
+          "name": "Base"
+        }
+      ],
+      "fields": [
+        {
+          "type": "variables-declaration",
+          "global": false,
+          "static": false,
+          "const": false,
+          "declarators": [
+            {
+              "type": "declarator",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "real"
+              },
+              "variable-name": "$w",
+              "reference": false,
+              "constructor-name": null,
+              "constructor-arguments": []
+            }
+          ],
+          "visibility": "private"
+        },
+        {
+          "type": "variables-declaration",
+          "global": false,
+          "static": false,
+          "const": false,
+          "declarators": [
+            {
+              "type": "declarator",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "real"
+              },
+              "variable-name": "$h",
+              "reference": false,
+              "constructor-name": null,
+              "constructor-arguments": []
+            }
+          ],
+          "visibility": "private"
+        }
+      ],
+      "methods": [
+        {
+          "type": "subroutine-declaration",
+          "subroutine-name": "__construct",
+          "result-type": {
+            "type": "builtin-type",
+            "type-value": "void"
+          },
+          "arguments-declarators": [
+            {
+              "type": "variables-declaration",
+              "global": false,
+              "static": false,
+              "const": false,
+              "declarators": [
+                {
+                  "type": "declarator",
+                  "variable-type": {
+                    "type": "builtin-type",
+                    "type-value": "real"
+                  },
+                  "variable-name": "$w",
+                  "reference": false,
+                  "constructor-name": null,
+                  "constructor-arguments": []
+                }
+              ]
+            },
+            {
+              "type": "variables-declaration",
+              "global": false,
+              "static": false,
+              "const": false,
+              "declarators": [
+                {
+                  "type": "declarator",
+                  "variable-type": {
+                    "type": "builtin-type",
+                    "type-value": "real"
+                  },
+                  "variable-name": "$h",
+                  "reference": false,
+                  "constructor-name": null,
+                  "constructor-arguments": []
+                }
+              ]
+            }
+          ],
+          "constant-section": [],
+          "type-section": [],
+          "variables-section": [],
+          "subroutines-section": [],
+          "subroutine-body": {
+            "type": "compound-statement",
+            "statements": [
+              {
+                "type": "expression-statement",
+                "expression": {
+                  "type": "function-call",
+                  "function-name": "__construct",
+                  "result-type": {
+                    "type": "builtin-type",
+                    "type-value": "void"
+                  },
+                  "arguments": [],
+                  "class-name": "parent"
+                }
+              },
+              {
+                "type": "expression-statement",
+                "expression": {
+                  "type": "assignment",
+                  "assignment-type": {
+                    "type": "builtin-type",
+                    "type-value": "real"
+                  },
+                  "variable": {
+                    "type": "member-access",
+                    "result-type": {
+                      "type": "builtin-type",
+                      "type-value": "real"
+                    },
+                    "object": {
+                      "type": "variable-reference",
+                      "variable-name": "$this",
+                      "variable-type": {
+                        "type": "named-type",
+                        "name": "Rect"
+                      },
+                      "variable-usage": "rvalue"
+                    },
+                    "member-name": "w"
+                  },
+                  "expression": {
+                    "type": "variable-reference",
+                    "variable-name": "$w",
+                    "variable-type": {
+                      "type": "builtin-type",
+                      "type-value": "real"
+                    },
+                    "variable-usage": "rvalue"
+                  }
+                }
+              },
+              {
+                "type": "expression-statement",
+                "expression": {
+                  "type": "assignment",
+                  "assignment-type": {
+                    "type": "builtin-type",
+                    "type-value": "real"
+                  },
+                  "variable": {
+                    "type": "member-access",
+                    "result-type": {
+                      "type": "builtin-type",
+                      "type-value": "real"
+                    },
+                    "object": {
+                      "type": "variable-reference",
+                      "variable-name": "$this",
+                      "variable-type": {
+                        "type": "named-type",
+                        "name": "Rect"
+                      },
+                      "variable-usage": "rvalue"
+                    },
+                    "member-name": "h"
+                  },
+                  "expression": {
+                    "type": "variable-reference",
+                    "variable-name": "$h",
+                    "variable-type": {
+                      "type": "builtin-type",
+                      "type-value": "real"
+                    },
+                    "variable-usage": "rvalue"
+                  }
+                }
+              }
+            ]
+          },
+          "visibility": "public"
+        },
+        {
+          "type": "subroutine-declaration",
+          "subroutine-name": "area",
+          "result-type": {
+            "type": "builtin-type",
+            "type-value": "real"
+          },
+          "arguments-declarators": [],
+          "constant-section": [],
+          "type-section": [],
+          "variables-section": [],
+          "subroutines-section": [],
+          "subroutine-body": {
+            "type": "compound-statement",
+            "statements": [
+              {
+                "type": "return-statement",
+                "expression": {
+                  "type": "product",
+                  "result-type": {
+                    "type": "builtin-type",
+                    "type-value": "real"
+                  },
+                  "left": {
+                    "type": "member-access",
+                    "result-type": {
+                      "type": "builtin-type",
+                      "type-value": "real"
+                    },
+                    "object": {
+                      "type": "variable-reference",
+                      "variable-name": "$this",
+                      "variable-type": {
+                        "type": "named-type",
+                        "name": "Rect"
+                      },
+                      "variable-usage": "rvalue"
+                    },
+                    "member-name": "w"
+                  },
+                  "right": {
+                    "type": "member-access",
+                    "result-type": {
+                      "type": "builtin-type",
+                      "type-value": "real"
+                    },
+                    "object": {
+                      "type": "variable-reference",
+                      "variable-name": "$this",
+                      "variable-type": {
+                        "type": "named-type",
+                        "name": "Rect"
+                      },
+                      "variable-usage": "rvalue"
+                    },
+                    "member-name": "h"
+                  }
+                },
+                "the-last-statement": true
+              }
+            ]
+          },
+          "visibility": "public"
+        },
+        {
+          "type": "subroutine-declaration",
+          "subroutine-name": "describe",
+          "result-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "arguments-declarators": [],
+          "constant-section": [],
+          "type-section": [],
+          "variables-section": [],
+          "subroutines-section": [],
+          "subroutine-body": {
+            "type": "compound-statement",
+            "statements": [
+              {
+                "type": "return-statement",
+                "expression": {
+                  "type": "string-concatenation",
+                  "result-type": "string",
+                  "left": {
+                    "type": "string-concatenation",
+                    "result-type": "string",
+                    "left": {
+                      "type": "string-concatenation",
+                      "result-type": "string",
+                      "left": {
+                        "type": "string-concatenation",
+                        "result-type": "string",
+                        "left": {
+                          "type": "string-concatenation",
+                          "result-type": "string",
+                          "left": {
+                            "type": "literal-constant",
+                            "constant-type": "string",
+                            "constant-value": "Rect "
+                          },
+                          "right": {
+                            "type": "member-access",
+                            "result-type": {
+                              "type": "builtin-type",
+                              "type-value": "real"
+                            },
+                            "object": {
+                              "type": "variable-reference",
+                              "variable-name": "$this",
+                              "variable-type": {
+                                "type": "named-type",
+                                "name": "Rect"
+                              },
+                              "variable-usage": "rvalue"
+                            },
+                            "member-name": "w"
+                          }
+                        },
+                        "right": {
+                          "type": "literal-constant",
+                          "constant-type": "string",
+                          "constant-value": "x"
+                        }
+                      },
+                      "right": {
+                        "type": "member-access",
+                        "result-type": {
+                          "type": "builtin-type",
+                          "type-value": "real"
+                        },
+                        "object": {
+                          "type": "variable-reference",
+                          "variable-name": "$this",
+                          "variable-type": {
+                            "type": "named-type",
+                            "name": "Rect"
+                          },
+                          "variable-usage": "rvalue"
+                        },
+                        "member-name": "h"
+                      }
+                    },
+                    "right": {
+                      "type": "literal-constant",
+                      "constant-type": "string",
+                      "constant-value": " "
+                    }
+                  },
+                  "right": {
+                    "type": "member-access",
+                    "result-type": {
+                      "type": "builtin-type",
+                      "type-value": "string"
+                    },
+                    "class-name": "self",
+                    "member-name": "UNITS",
+                    "static": true
+                  }
+                },
+                "the-last-statement": true
+              }
+            ]
+          },
+          "visibility": "public"
+        }
+      ],
+      "friends": [],
+      "kind": "class"
+    }
+  ],
+  "variables-section": [
+    {
+      "type": "variables-declaration",
+      "global": true,
+      "static": false,
+      "const": false,
+      "declarators": [
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "array"
+          },
+          "variable-name": "$shapes",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "mixed"
+          },
+          "variable-name": "$total",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "mixed"
+          },
+          "variable-name": "$shape",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "named-type",
+            "name": "Rect"
+          },
+          "variable-name": "$rect",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "real"
+          },
+          "variable-name": "$area",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable-name": "$text",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "boolean"
+          },
+          "variable-name": "$isShape",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable-name": "$count",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable-name": "$units",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable-name": "$cls",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        }
+      ]
+    }
+  ],
+  "subroutines-section": [],
+  "subroutine-body": {
+    "type": "compound-statement",
+    "statements": [
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "array"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$shapes",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "array"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "array-literal",
+            "result-type": {
+              "type": "builtin-type",
+              "type-value": "array"
+            },
+            "elements": [
+              {
+                "type": "array-element",
+                "key": null,
+                "value": {
+                  "type": "dynamic-memory-allocation",
+                  "array-flag": "false",
+                  "address-hint": null,
+                  "variable-type": {
+                    "type": "named-type",
+                    "name": "Circle"
+                  },
+                  "constructor-name": "__construct",
+                  "constructor-arguments": [
+                    {
+                      "type": "literal-constant",
+                      "constant-type": "real",
+                      "constant-value": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "array-element",
+                "key": null,
+                "value": {
+                  "type": "dynamic-memory-allocation",
+                  "array-flag": "false",
+                  "address-hint": null,
+                  "variable-type": {
+                    "type": "named-type",
+                    "name": "Rect"
+                  },
+                  "constructor-name": "__construct",
+                  "constructor-arguments": [
+                    {
+                      "type": "literal-constant",
+                      "constant-type": "integer",
+                      "constant-value": 2
+                    },
+                    {
+                      "type": "literal-constant",
+                      "constant-type": "integer",
+                      "constant-value": 3
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "real"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$total",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "real"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "literal-constant",
+            "constant-type": "real",
+            "constant-value": 0.0
+          }
+        }
+      },
+      {
+        "type": "loop-statement",
+        "begin-condition": null,
+        "end-condition": null,
+        "loop-index": {
+          "type": "variable-reference",
+          "variable-name": "$shape",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "mixed"
+          },
+          "variable-usage": "lvalue"
+        },
+        "loop-initialization": null,
+        "loop-pass-to-next-iteration": null,
+        "loop-body": {
+          "type": "compound-statement",
+          "statements": [
+            {
+              "type": "expression-statement",
+              "expression": {
+                "type": "assignment-sum",
+                "assignment-type": {
+                  "type": "builtin-type",
+                  "type-value": "mixed"
+                },
+                "variable": {
+                  "type": "variable-reference",
+                  "variable-name": "$total",
+                  "variable-type": {
+                    "type": "builtin-type",
+                    "type-value": "mixed"
+                  },
+                  "variable-usage": "lvalue"
+                },
+                "expression": {
+                  "type": "function-call",
+                  "function-name": "area",
+                  "result-type": {
+                    "type": "builtin-type",
+                    "type-value": "mixed"
+                  },
+                  "arguments": [],
+                  "object": {
+                    "type": "variable-reference",
+                    "variable-name": "$shape",
+                    "variable-type": {
+                      "type": "builtin-type",
+                      "type-value": "mixed"
+                    },
+                    "variable-usage": "rvalue"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "foreach-collection": {
+          "type": "variable-reference",
+          "variable-name": "$shapes",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "array"
+          },
+          "variable-usage": "rvalue"
+        },
+        "foreach-key": null
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "named-type",
+            "name": "Rect"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$rect",
+            "variable-type": {
+              "type": "named-type",
+              "name": "Rect"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "dynamic-memory-allocation",
+            "array-flag": "false",
+            "address-hint": null,
+            "variable-type": {
+              "type": "named-type",
+              "name": "Rect"
+            },
+            "constructor-name": "__construct",
+            "constructor-arguments": [
+              {
+                "type": "literal-constant",
+                "constant-type": "integer",
+                "constant-value": 4
+              },
+              {
+                "type": "literal-constant",
+                "constant-type": "integer",
+                "constant-value": 5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "real"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$area",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "real"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "function-call",
+            "function-name": "area",
+            "result-type": {
+              "type": "builtin-type",
+              "type-value": "real"
+            },
+            "arguments": [],
+            "object": {
+              "type": "variable-reference",
+              "variable-name": "$rect",
+              "variable-type": {
+                "type": "named-type",
+                "name": "Rect"
+              },
+              "variable-usage": "rvalue"
+            }
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$text",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "string"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "function-call",
+            "function-name": "describe",
+            "result-type": {
+              "type": "builtin-type",
+              "type-value": "string"
+            },
+            "arguments": [],
+            "object": {
+              "type": "variable-reference",
+              "variable-name": "$rect",
+              "variable-type": {
+                "type": "named-type",
+                "name": "Rect"
+              },
+              "variable-usage": "rvalue"
+            }
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "boolean"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$isShape",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "boolean"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "instanceof",
+            "result-type": "boolean",
+            "left": {
+              "type": "variable-reference",
+              "variable-name": "$rect",
+              "variable-type": {
+                "type": "named-type",
+                "name": "Rect"
+              },
+              "variable-usage": "rvalue"
+            },
+            "right": {
+              "type": "named-type",
+              "name": "Shape"
+            }
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$count",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "integer"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "function-call",
+            "function-name": "getCount",
+            "result-type": {
+              "type": "builtin-type",
+              "type-value": "integer"
+            },
+            "arguments": [],
+            "class-name": "Base"
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$units",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "string"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "member-access",
+            "result-type": {
+              "type": "builtin-type",
+              "type-value": "string"
+            },
+            "class-name": "Rect",
+            "member-name": "UNITS",
+            "static": true
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$cls",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "string"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "literal-constant",
+            "constant-type": "string",
+            "constant-value": "Rect"
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "function-call",
+          "function-name": "echo",
+          "result-type": {
+            "type": "builtin-type",
+            "type-value": "void"
+          },
+          "arguments": [
+            {
+              "type": "variable-reference",
+              "variable-name": "$total",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "mixed"
+              },
+              "variable-usage": "rvalue"
+            },
+            {
+              "type": "literal-constant",
+              "constant-type": "string",
+              "constant-value": " "
+            },
+            {
+              "type": "variable-reference",
+              "variable-name": "$text",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "string"
+              },
+              "variable-usage": "rvalue"
+            },
+            {
+              "type": "literal-constant",
+              "constant-type": "string",
+              "constant-value": " "
+            },
+            {
+              "type": "variable-reference",
+              "variable-name": "$count",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "integer"
+              },
+              "variable-usage": "rvalue"
+            },
+            {
+              "type": "variable-reference",
+              "variable-name": "PHP_EOL",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "string"
+              },
+              "variable-usage": "rvalue"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

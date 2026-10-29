@@ -1,0 +1,755 @@
+{
+  "type": "subroutine-declaration",
+  "subroutine-name": "main",
+  "result-type": {
+    "type": "builtin-type",
+    "type-value": "void"
+  },
+  "arguments-declarators": [],
+  "constant-section": [],
+  "type-section": [
+    {
+      "type": "enumeration-type",
+      "name": "Suit",
+      "values": [
+        {
+          "type": "literal-constant",
+          "constant-type": "integer",
+          "constant-value": 0,
+          "name": "Hearts"
+        },
+        {
+          "type": "literal-constant",
+          "constant-type": "integer",
+          "constant-value": 1,
+          "name": "Spades"
+        }
+      ]
+    },
+    {
+      "type": "enumeration-type",
+      "name": "Status",
+      "values": [
+        {
+          "type": "literal-constant",
+          "constant-type": "string",
+          "constant-value": "active",
+          "name": "Active"
+        },
+        {
+          "type": "literal-constant",
+          "constant-type": "string",
+          "constant-value": "blocked",
+          "name": "Blocked"
+        }
+      ],
+      "backing-type": {
+        "type": "builtin-type",
+        "type-value": "string"
+      }
+    }
+  ],
+  "variables-section": [
+    {
+      "type": "variables-declaration",
+      "global": true,
+      "static": false,
+      "const": false,
+      "declarators": [
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "named-type",
+            "name": "Suit"
+          },
+          "variable-name": "$card",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "named-type",
+            "name": "Status"
+          },
+          "variable-name": "$status",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "boolean"
+          },
+          "variable-name": "$same",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "real"
+          },
+          "variable-name": "$half",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable-name": "$whole",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "real"
+          },
+          "variable-name": "$frac",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "real"
+          },
+          "variable-name": "$unknown",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable-name": "$n",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "integer|real"
+          },
+          "variable-name": "$maybe",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable-name": "$a",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable-name": "$b",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable-name": "$c",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "mixed"
+          },
+          "variable-name": "$name",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "mixed"
+          },
+          "variable-name": "$undefined",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        }
+      ]
+    }
+  ],
+  "subroutines-section": [],
+  "subroutine-body": {
+    "type": "compound-statement",
+    "statements": [
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "named-type",
+            "name": "Suit"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$card",
+            "variable-type": {
+              "type": "named-type",
+              "name": "Suit"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "member-access",
+            "result-type": {
+              "type": "named-type",
+              "name": "Suit"
+            },
+            "class-name": "Suit",
+            "member-name": "Hearts",
+            "static": true
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "named-type",
+            "name": "Status"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$status",
+            "variable-type": {
+              "type": "named-type",
+              "name": "Status"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "member-access",
+            "result-type": {
+              "type": "named-type",
+              "name": "Status"
+            },
+            "class-name": "Status",
+            "member-name": "Active",
+            "static": true
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "boolean"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$same",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "boolean"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "equals",
+            "result-type": "boolean",
+            "left": {
+              "type": "variable-reference",
+              "variable-name": "$card",
+              "variable-type": {
+                "type": "named-type",
+                "name": "Suit"
+              },
+              "variable-usage": "rvalue"
+            },
+            "right": {
+              "type": "member-access",
+              "result-type": {
+                "type": "named-type",
+                "name": "Suit"
+              },
+              "class-name": "Suit",
+              "member-name": "Spades",
+              "static": true
+            },
+            "strict": true
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "real"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$half",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "real"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "quotient",
+            "result-type": {
+              "type": "builtin-type",
+              "type-value": "real"
+            },
+            "left": {
+              "type": "literal-constant",
+              "constant-type": "integer",
+              "constant-value": 7
+            },
+            "right": {
+              "type": "literal-constant",
+              "constant-type": "integer",
+              "constant-value": 2
+            }
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$whole",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "integer"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "quotient",
+            "result-type": {
+              "type": "builtin-type",
+              "type-value": "integer"
+            },
+            "left": {
+              "type": "literal-constant",
+              "constant-type": "integer",
+              "constant-value": 8
+            },
+            "right": {
+              "type": "literal-constant",
+              "constant-type": "integer",
+              "constant-value": 2
+            }
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "real"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$frac",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "real"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "power",
+            "result-type": {
+              "type": "builtin-type",
+              "type-value": "real"
+            },
+            "left": {
+              "type": "literal-constant",
+              "constant-type": "integer",
+              "constant-value": 2
+            },
+            "right": {
+              "type": "literal-constant",
+              "constant-type": "integer",
+              "constant-value": -1
+            }
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "real"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$unknown",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "real"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "quotient",
+            "result-type": {
+              "type": "builtin-type",
+              "type-value": "real"
+            },
+            "left": {
+              "type": "variable-reference",
+              "variable-name": "$whole",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "integer"
+              },
+              "variable-usage": "rvalue"
+            },
+            "right": {
+              "type": "variable-reference",
+              "variable-name": "$half",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "real"
+              },
+              "variable-usage": "rvalue"
+            }
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$n",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "integer"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "literal-constant",
+            "constant-type": "integer",
+            "constant-value": 5
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "integer|real"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$maybe",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "integer|real"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "quotient",
+            "result-type": {
+              "type": "builtin-type",
+              "type-value": "integer|real"
+            },
+            "left": {
+              "type": "variable-reference",
+              "variable-name": "$n",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "integer"
+              },
+              "variable-usage": "rvalue"
+            },
+            "right": {
+              "type": "literal-constant",
+              "constant-type": "integer",
+              "constant-value": 3
+            }
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$a",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "integer"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "literal-constant",
+            "constant-type": "integer",
+            "constant-value": 1
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$b",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "integer"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "variable-reference",
+            "variable-name": "$a",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "integer"
+            },
+            "variable-usage": "rvalue"
+          },
+          "by-reference": true
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$b",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "integer"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "literal-constant",
+            "constant-type": "integer",
+            "constant-value": 2
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$c",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "integer"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "three-way-comparison",
+            "result-type": {
+              "type": "builtin-type",
+              "type-value": "integer"
+            },
+            "left": {
+              "type": "variable-reference",
+              "variable-name": "$a",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "integer"
+              },
+              "variable-usage": "rvalue"
+            },
+            "right": {
+              "type": "variable-reference",
+              "variable-name": "$b",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "integer"
+              },
+              "variable-usage": "rvalue"
+            }
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "mixed"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$name",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "mixed"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "null-coalescing",
+            "result-type": {
+              "type": "builtin-type",
+              "type-value": "mixed"
+            },
+            "left": {
+              "type": "variable-reference",
+              "variable-name": "$undefined",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "mixed"
+              },
+              "variable-usage": "rvalue"
+            },
+            "right": {
+              "type": "literal-constant",
+              "constant-type": "string",
+              "constant-value": "guest"
+            }
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment-null-coalescing",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "mixed"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$name",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "mixed"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "literal-constant",
+            "constant-type": "string",
+            "constant-value": "x"
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "function-call",
+          "function-name": "echo",
+          "result-type": {
+            "type": "builtin-type",
+            "type-value": "void"
+          },
+          "arguments": [
+            {
+              "type": "variable-reference",
+              "variable-name": "$a",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "integer"
+              },
+              "variable-usage": "rvalue"
+            },
+            {
+              "type": "variable-reference",
+              "variable-name": "PHP_EOL",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "string"
+              },
+              "variable-usage": "rvalue"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

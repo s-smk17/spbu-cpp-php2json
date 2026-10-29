@@ -1,0 +1,773 @@
+{
+  "type": "subroutine-declaration",
+  "subroutine-name": "main",
+  "result-type": {
+    "type": "builtin-type",
+    "type-value": "void"
+  },
+  "arguments-declarators": [],
+  "constant-section": [],
+  "type-section": [],
+  "variables-section": [
+    {
+      "type": "variables-declaration",
+      "global": true,
+      "static": false,
+      "const": false,
+      "declarators": [
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable-name": "$name",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "array"
+          },
+          "variable-name": "$items",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "array"
+          },
+          "variable-name": "$list",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable-name": "$plain",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable-name": "$simple",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable-name": "$arrayKey",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable-name": "$arrayIdx",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable-name": "$complex",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable-name": "$escaped",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable-name": "$heredoc",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable-name": "$nowdoc",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable-name": "$joined",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        }
+      ]
+    }
+  ],
+  "subroutines-section": [],
+  "subroutine-body": {
+    "type": "compound-statement",
+    "statements": [
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$name",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "string"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "literal-constant",
+            "constant-type": "string",
+            "constant-value": "Сергей"
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "array"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$items",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "array"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "array-literal",
+            "result-type": {
+              "type": "builtin-type",
+              "type-value": "array"
+            },
+            "elements": [
+              {
+                "type": "array-element",
+                "key": {
+                  "type": "literal-constant",
+                  "constant-type": "string",
+                  "constant-value": "apple"
+                },
+                "value": {
+                  "type": "literal-constant",
+                  "constant-type": "integer",
+                  "constant-value": 3
+                }
+              },
+              {
+                "type": "array-element",
+                "key": {
+                  "type": "literal-constant",
+                  "constant-type": "string",
+                  "constant-value": "pear"
+                },
+                "value": {
+                  "type": "literal-constant",
+                  "constant-type": "integer",
+                  "constant-value": 5
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "array"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$list",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "array"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "array-literal",
+            "result-type": {
+              "type": "builtin-type",
+              "type-value": "array"
+            },
+            "elements": [
+              {
+                "type": "array-element",
+                "key": null,
+                "value": {
+                  "type": "literal-constant",
+                  "constant-type": "integer",
+                  "constant-value": 10
+                }
+              },
+              {
+                "type": "array-element",
+                "key": null,
+                "value": {
+                  "type": "literal-constant",
+                  "constant-type": "integer",
+                  "constant-value": 20
+                }
+              },
+              {
+                "type": "array-element",
+                "key": null,
+                "value": {
+                  "type": "literal-constant",
+                  "constant-type": "integer",
+                  "constant-value": 30
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$plain",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "string"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "literal-constant",
+            "constant-type": "string",
+            "constant-value": "Just text\twith tab\n"
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$simple",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "string"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "string-concatenation",
+            "result-type": "string",
+            "left": {
+              "type": "string-concatenation",
+              "result-type": "string",
+              "left": {
+                "type": "literal-constant",
+                "constant-type": "string",
+                "constant-value": "Hello, "
+              },
+              "right": {
+                "type": "variable-reference",
+                "variable-name": "$name",
+                "variable-type": {
+                  "type": "builtin-type",
+                  "type-value": "string"
+                },
+                "variable-usage": "rvalue"
+              }
+            },
+            "right": {
+              "type": "literal-constant",
+              "constant-type": "string",
+              "constant-value": "!"
+            }
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$arrayKey",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "string"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "string-concatenation",
+            "result-type": "string",
+            "left": {
+              "type": "literal-constant",
+              "constant-type": "string",
+              "constant-value": "Apples: "
+            },
+            "right": {
+              "type": "index",
+              "array-expression": {
+                "type": "variable-reference",
+                "variable-name": "$items",
+                "variable-type": {
+                  "type": "builtin-type",
+                  "type-value": "array"
+                },
+                "variable-usage": "rvalue"
+              },
+              "result-type": {
+                "type": "builtin-type",
+                "type-value": "mixed"
+              },
+              "indices": [
+                {
+                  "type": "literal-constant",
+                  "constant-type": "string",
+                  "constant-value": "apple"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$arrayIdx",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "string"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "string-concatenation",
+            "result-type": "string",
+            "left": {
+              "type": "literal-constant",
+              "constant-type": "string",
+              "constant-value": "Second: "
+            },
+            "right": {
+              "type": "index",
+              "array-expression": {
+                "type": "variable-reference",
+                "variable-name": "$list",
+                "variable-type": {
+                  "type": "builtin-type",
+                  "type-value": "array"
+                },
+                "variable-usage": "rvalue"
+              },
+              "result-type": {
+                "type": "builtin-type",
+                "type-value": "mixed"
+              },
+              "indices": [
+                {
+                  "type": "literal-constant",
+                  "constant-type": "integer",
+                  "constant-value": 1
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$complex",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "string"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "string-concatenation",
+            "result-type": "string",
+            "left": {
+              "type": "string-concatenation",
+              "result-type": "string",
+              "left": {
+                "type": "string-concatenation",
+                "result-type": "string",
+                "left": {
+                  "type": "literal-constant",
+                  "constant-type": "string",
+                  "constant-value": "Pears: "
+                },
+                "right": {
+                  "type": "index",
+                  "array-expression": {
+                    "type": "variable-reference",
+                    "variable-name": "$items",
+                    "variable-type": {
+                      "type": "builtin-type",
+                      "type-value": "array"
+                    },
+                    "variable-usage": "rvalue"
+                  },
+                  "result-type": {
+                    "type": "builtin-type",
+                    "type-value": "mixed"
+                  },
+                  "indices": [
+                    {
+                      "type": "literal-constant",
+                      "constant-type": "string",
+                      "constant-value": "pear"
+                    }
+                  ]
+                }
+              },
+              "right": {
+                "type": "literal-constant",
+                "constant-type": "string",
+                "constant-value": ", total: "
+              }
+            },
+            "right": {
+              "type": "index",
+              "array-expression": {
+                "type": "variable-reference",
+                "variable-name": "$list",
+                "variable-type": {
+                  "type": "builtin-type",
+                  "type-value": "array"
+                },
+                "variable-usage": "rvalue"
+              },
+              "result-type": {
+                "type": "builtin-type",
+                "type-value": "mixed"
+              },
+              "indices": [
+                {
+                  "type": "literal-constant",
+                  "constant-type": "integer",
+                  "constant-value": 0
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$escaped",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "string"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "literal-constant",
+            "constant-type": "string",
+            "constant-value": "Price: $5, quote: \", unicode: ☺, hex: A"
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$heredoc",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "string"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "string-concatenation",
+            "result-type": "string",
+            "left": {
+              "type": "string-concatenation",
+              "result-type": "string",
+              "left": {
+                "type": "string-concatenation",
+                "result-type": "string",
+                "left": {
+                  "type": "literal-constant",
+                  "constant-type": "string",
+                  "constant-value": "Name: "
+                },
+                "right": {
+                  "type": "variable-reference",
+                  "variable-name": "$name",
+                  "variable-type": {
+                    "type": "builtin-type",
+                    "type-value": "string"
+                  },
+                  "variable-usage": "rvalue"
+                }
+              },
+              "right": {
+                "type": "literal-constant",
+                "constant-type": "string",
+                "constant-value": "\nCount: "
+              }
+            },
+            "right": {
+              "type": "index",
+              "array-expression": {
+                "type": "variable-reference",
+                "variable-name": "$list",
+                "variable-type": {
+                  "type": "builtin-type",
+                  "type-value": "array"
+                },
+                "variable-usage": "rvalue"
+              },
+              "result-type": {
+                "type": "builtin-type",
+                "type-value": "mixed"
+              },
+              "indices": [
+                {
+                  "type": "literal-constant",
+                  "constant-type": "integer",
+                  "constant-value": 2
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$nowdoc",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "string"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "literal-constant",
+            "constant-type": "string",
+            "constant-value": "Raw $name, no {$interpolation}"
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "string"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$joined",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "string"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "string-concatenation",
+            "result-type": "string",
+            "left": {
+              "type": "function-call",
+              "function-name": "implode",
+              "result-type": {
+                "type": "builtin-type",
+                "type-value": "string"
+              },
+              "arguments": [
+                {
+                  "type": "literal-constant",
+                  "constant-type": "string",
+                  "constant-value": ", "
+                },
+                {
+                  "type": "variable-reference",
+                  "variable-name": "$list",
+                  "variable-type": {
+                    "type": "builtin-type",
+                    "type-value": "array"
+                  },
+                  "variable-usage": "rvalue"
+                }
+              ]
+            },
+            "right": {
+              "type": "literal-constant",
+              "constant-type": "string",
+              "constant-value": "!"
+            }
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "function-call",
+          "function-name": "echo",
+          "result-type": {
+            "type": "builtin-type",
+            "type-value": "void"
+          },
+          "arguments": [
+            {
+              "type": "variable-reference",
+              "variable-name": "$simple",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "string"
+              },
+              "variable-usage": "rvalue"
+            },
+            {
+              "type": "variable-reference",
+              "variable-name": "PHP_EOL",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "string"
+              },
+              "variable-usage": "rvalue"
+            },
+            {
+              "type": "variable-reference",
+              "variable-name": "$heredoc",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "string"
+              },
+              "variable-usage": "rvalue"
+            },
+            {
+              "type": "variable-reference",
+              "variable-name": "PHP_EOL",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "string"
+              },
+              "variable-usage": "rvalue"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

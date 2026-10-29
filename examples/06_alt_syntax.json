@@ -1,0 +1,707 @@
+{
+  "type": "subroutine-declaration",
+  "subroutine-name": "main",
+  "result-type": {
+    "type": "builtin-type",
+    "type-value": "void"
+  },
+  "arguments-declarators": [],
+  "constant-section": [],
+  "type-section": [],
+  "variables-section": [
+    {
+      "type": "variables-declaration",
+      "global": true,
+      "static": false,
+      "const": false,
+      "declarators": [
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "array"
+          },
+          "variable-name": "$items",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "mixed"
+          },
+          "variable-name": "$i",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "mixed"
+          },
+          "variable-name": "$item",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable-name": "$n",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        },
+        {
+          "type": "declarator",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable-name": "$k",
+          "reference": false,
+          "constructor-name": null,
+          "constructor-arguments": []
+        }
+      ]
+    }
+  ],
+  "subroutines-section": [],
+  "subroutine-body": {
+    "type": "compound-statement",
+    "statements": [
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "function-call",
+          "function-name": "echo",
+          "result-type": {
+            "type": "builtin-type",
+            "type-value": "void"
+          },
+          "arguments": [
+            {
+              "type": "literal-constant",
+              "constant-type": "string",
+              "constant-value": "<!DOCTYPE html>\n<html>\n<body>\n"
+            }
+          ]
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "array"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$items",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "array"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "array-literal",
+            "result-type": {
+              "type": "builtin-type",
+              "type-value": "array"
+            },
+            "elements": [
+              {
+                "type": "array-element",
+                "key": null,
+                "value": {
+                  "type": "literal-constant",
+                  "constant-type": "string",
+                  "constant-value": "one"
+                }
+              },
+              {
+                "type": "array-element",
+                "key": null,
+                "value": {
+                  "type": "literal-constant",
+                  "constant-type": "string",
+                  "constant-value": "two"
+                }
+              },
+              {
+                "type": "array-element",
+                "key": null,
+                "value": {
+                  "type": "literal-constant",
+                  "constant-type": "string",
+                  "constant-value": "three"
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "function-call",
+          "function-name": "echo",
+          "result-type": {
+            "type": "builtin-type",
+            "type-value": "void"
+          },
+          "arguments": [
+            {
+              "type": "literal-constant",
+              "constant-type": "string",
+              "constant-value": "<ul>\n"
+            }
+          ]
+        }
+      },
+      {
+        "type": "loop-statement",
+        "begin-condition": null,
+        "end-condition": null,
+        "loop-index": {
+          "type": "variable-reference",
+          "variable-name": "$item",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "mixed"
+          },
+          "variable-usage": "lvalue"
+        },
+        "loop-initialization": null,
+        "loop-pass-to-next-iteration": null,
+        "loop-body": {
+          "type": "compound-statement",
+          "statements": [
+            {
+              "type": "expression-statement",
+              "expression": {
+                "type": "function-call",
+                "function-name": "echo",
+                "result-type": {
+                  "type": "builtin-type",
+                  "type-value": "void"
+                },
+                "arguments": [
+                  {
+                    "type": "literal-constant",
+                    "constant-type": "string",
+                    "constant-value": "    <li>"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "expression-statement",
+              "expression": {
+                "type": "function-call",
+                "function-name": "echo",
+                "result-type": {
+                  "type": "builtin-type",
+                  "type-value": "void"
+                },
+                "arguments": [
+                  {
+                    "type": "sum",
+                    "result-type": {
+                      "type": "builtin-type",
+                      "type-value": "mixed"
+                    },
+                    "left": {
+                      "type": "variable-reference",
+                      "variable-name": "$i",
+                      "variable-type": {
+                        "type": "builtin-type",
+                        "type-value": "mixed"
+                      },
+                      "variable-usage": "rvalue"
+                    },
+                    "right": {
+                      "type": "literal-constant",
+                      "constant-type": "integer",
+                      "constant-value": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "expression-statement",
+              "expression": {
+                "type": "function-call",
+                "function-name": "echo",
+                "result-type": {
+                  "type": "builtin-type",
+                  "type-value": "void"
+                },
+                "arguments": [
+                  {
+                    "type": "literal-constant",
+                    "constant-type": "string",
+                    "constant-value": ". "
+                  }
+                ]
+              }
+            },
+            {
+              "type": "expression-statement",
+              "expression": {
+                "type": "function-call",
+                "function-name": "echo",
+                "result-type": {
+                  "type": "builtin-type",
+                  "type-value": "void"
+                },
+                "arguments": [
+                  {
+                    "type": "variable-reference",
+                    "variable-name": "$item",
+                    "variable-type": {
+                      "type": "builtin-type",
+                      "type-value": "mixed"
+                    },
+                    "variable-usage": "rvalue"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "expression-statement",
+              "expression": {
+                "type": "function-call",
+                "function-name": "echo",
+                "result-type": {
+                  "type": "builtin-type",
+                  "type-value": "void"
+                },
+                "arguments": [
+                  {
+                    "type": "literal-constant",
+                    "constant-type": "string",
+                    "constant-value": "</li>\n"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "foreach-collection": {
+          "type": "variable-reference",
+          "variable-name": "$items",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "array"
+          },
+          "variable-usage": "rvalue"
+        },
+        "foreach-key": {
+          "type": "variable-reference",
+          "variable-name": "$i",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "mixed"
+          },
+          "variable-usage": "lvalue"
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "function-call",
+          "function-name": "echo",
+          "result-type": {
+            "type": "builtin-type",
+            "type-value": "void"
+          },
+          "arguments": [
+            {
+              "type": "literal-constant",
+              "constant-type": "string",
+              "constant-value": "</ul>\n"
+            }
+          ]
+        }
+      },
+      {
+        "type": "conditional-statement",
+        "condition": {
+          "type": "greater",
+          "result-type": "boolean",
+          "left": {
+            "type": "function-call",
+            "function-name": "count",
+            "result-type": {
+              "type": "builtin-type",
+              "type-value": "integer"
+            },
+            "arguments": [
+              {
+                "type": "variable-reference",
+                "variable-name": "$items",
+                "variable-type": {
+                  "type": "builtin-type",
+                  "type-value": "array"
+                },
+                "variable-usage": "rvalue"
+              }
+            ]
+          },
+          "right": {
+            "type": "literal-constant",
+            "constant-type": "integer",
+            "constant-value": 2
+          }
+        },
+        "if-true": {
+          "type": "compound-statement",
+          "statements": [
+            {
+              "type": "expression-statement",
+              "expression": {
+                "type": "function-call",
+                "function-name": "echo",
+                "result-type": {
+                  "type": "builtin-type",
+                  "type-value": "void"
+                },
+                "arguments": [
+                  {
+                    "type": "literal-constant",
+                    "constant-type": "string",
+                    "constant-value": "    <p>Many items</p>\n"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "if-false": {
+          "type": "conditional-statement",
+          "condition": {
+            "type": "equals",
+            "result-type": "boolean",
+            "left": {
+              "type": "function-call",
+              "function-name": "count",
+              "result-type": {
+                "type": "builtin-type",
+                "type-value": "integer"
+              },
+              "arguments": [
+                {
+                  "type": "variable-reference",
+                  "variable-name": "$items",
+                  "variable-type": {
+                    "type": "builtin-type",
+                    "type-value": "array"
+                  },
+                  "variable-usage": "rvalue"
+                }
+              ]
+            },
+            "right": {
+              "type": "literal-constant",
+              "constant-type": "integer",
+              "constant-value": 0
+            }
+          },
+          "if-true": {
+            "type": "compound-statement",
+            "statements": [
+              {
+                "type": "expression-statement",
+                "expression": {
+                  "type": "function-call",
+                  "function-name": "echo",
+                  "result-type": {
+                    "type": "builtin-type",
+                    "type-value": "void"
+                  },
+                  "arguments": [
+                    {
+                      "type": "literal-constant",
+                      "constant-type": "string",
+                      "constant-value": "    <p>Empty</p>\n"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "if-false": {
+            "type": "compound-statement",
+            "statements": [
+              {
+                "type": "expression-statement",
+                "expression": {
+                  "type": "function-call",
+                  "function-name": "echo",
+                  "result-type": {
+                    "type": "builtin-type",
+                    "type-value": "void"
+                  },
+                  "arguments": [
+                    {
+                      "type": "literal-constant",
+                      "constant-type": "string",
+                      "constant-value": "    <p>Few items</p>\n"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$n",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "integer"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "literal-constant",
+            "constant-type": "integer",
+            "constant-value": 3
+          }
+        }
+      },
+      {
+        "type": "loop-statement",
+        "begin-condition": {
+          "type": "greater",
+          "result-type": "boolean",
+          "left": {
+            "type": "variable-reference",
+            "variable-name": "$n",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "integer"
+            },
+            "variable-usage": "rvalue"
+          },
+          "right": {
+            "type": "literal-constant",
+            "constant-type": "integer",
+            "constant-value": 0
+          }
+        },
+        "end-condition": null,
+        "loop-index": null,
+        "loop-initialization": null,
+        "loop-pass-to-next-iteration": null,
+        "loop-body": {
+          "type": "compound-statement",
+          "statements": [
+            {
+              "type": "expression-statement",
+              "expression": {
+                "type": "postfix-decrement",
+                "result-type": {
+                  "type": "builtin-type",
+                  "type-value": "integer"
+                },
+                "argument": {
+                  "type": "variable-reference",
+                  "variable-name": "$n",
+                  "variable-type": {
+                    "type": "builtin-type",
+                    "type-value": "integer"
+                  },
+                  "variable-usage": "lvalue"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "loop-statement",
+        "begin-condition": {
+          "type": "less",
+          "result-type": "boolean",
+          "left": {
+            "type": "variable-reference",
+            "variable-name": "$k",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "integer"
+            },
+            "variable-usage": "rvalue"
+          },
+          "right": {
+            "type": "literal-constant",
+            "constant-type": "integer",
+            "constant-value": 2
+          }
+        },
+        "end-condition": null,
+        "loop-index": {
+          "type": "variable-reference",
+          "variable-name": "$k",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable-usage": "lvalue"
+        },
+        "loop-initialization": {
+          "type": "assignment",
+          "assignment-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable": {
+            "type": "variable-reference",
+            "variable-name": "$k",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "integer"
+            },
+            "variable-usage": "lvalue"
+          },
+          "expression": {
+            "type": "literal-constant",
+            "constant-type": "integer",
+            "constant-value": 0
+          }
+        },
+        "loop-pass-to-next-iteration": {
+          "type": "postfix-increment",
+          "result-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "argument": {
+            "type": "variable-reference",
+            "variable-name": "$k",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "integer"
+            },
+            "variable-usage": "lvalue"
+          }
+        },
+        "loop-body": {
+          "type": "compound-statement",
+          "statements": [
+            {
+              "type": "expression-statement",
+              "expression": {
+                "type": "function-call",
+                "function-name": "echo",
+                "result-type": {
+                  "type": "builtin-type",
+                  "type-value": "void"
+                },
+                "arguments": [
+                  {
+                    "type": "variable-reference",
+                    "variable-name": "$k",
+                    "variable-type": {
+                      "type": "builtin-type",
+                      "type-value": "integer"
+                    },
+                    "variable-usage": "rvalue"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "choose-statement",
+        "pass-control": true,
+        "expression-to-analyze": {
+          "type": "variable-reference",
+          "variable-name": "$n",
+          "variable-type": {
+            "type": "builtin-type",
+            "type-value": "integer"
+          },
+          "variable-usage": "rvalue"
+        },
+        "variants": [
+          {
+            "type": "choose-variant",
+            "condition-label": {
+              "type": "literal-constant",
+              "constant-type": "integer",
+              "constant-value": 0
+            },
+            "variant-body": {
+              "type": "compound-statement",
+              "statements": [
+                {
+                  "type": "expression-statement",
+                  "expression": {
+                    "type": "function-call",
+                    "function-name": "echo",
+                    "result-type": {
+                      "type": "builtin-type",
+                      "type-value": "void"
+                    },
+                    "arguments": [
+                      {
+                        "type": "literal-constant",
+                        "constant-type": "string",
+                        "constant-value": "zero"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "break-statement",
+                  "label": null
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "type": "expression-statement",
+        "expression": {
+          "type": "function-call",
+          "function-name": "echo",
+          "result-type": {
+            "type": "builtin-type",
+            "type-value": "void"
+          },
+          "arguments": [
+            {
+              "type": "literal-constant",
+              "constant-type": "string",
+              "constant-value": "</body>\n</html>\n"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
